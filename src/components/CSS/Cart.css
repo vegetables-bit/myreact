@@ -1,0 +1,30 @@
+.cart-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.cart-item input {
+  width: 50px;
+  text-align: center;
+}
+
+.checkout-btn {
+  background-color: rgb(128, 0, 21);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: darkgreen;
+}

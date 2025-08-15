@@ -1,85 +1,85 @@
-.navbar {
+.navbar { 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 3px;
+  padding: 10px 30px; 
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   position: sticky;
+  background: white;
 }
 
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 15px;
+  gap: 40px;
+  padding: 0; 
 }
 
-.nav-logo p{
+.nav-logo img {
+  height: 50px;
+  width: auto;
+}
+
+.nav-logo p {
   color: #171717;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.nav-menu{
+.nav-menu {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 50px;
+  gap: 30px;
   color: #626262;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 
-.nav-menu li{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3px;
+.nav-menu li {
   cursor: pointer;
+  transition: color 0.2s ease;
 }
 
-.nav-menu hr{
-  border: none;
-  width: 80%;
-  height: 3px;
-  border-radius: 10px;
-  background: #ff4141;
+.nav-menu li:hover {
+  color: #ff4141;
 }
 
-.nav-login-cart{
+.nav-login-cart {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: -10px;
 }
 
-.nav-login-cart button{
-  width: 100px;
-  height: 58px;
+.nav-login-cart button {
+  width: 90px;
+  height: 46px;
   outline: none;
   border: 1px solid #7a7a7a;
-  border-radius: 75px;
+  border-radius: 20px;
   color: #515151;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 700;
   background: white;
   cursor: pointer;
+  transition: background 0.2s ease;
 }
 
-.nav-login-cart button:active{
+.nav-login-cart button:hover {
   background: #f3f3f3;
 }
 
-.nav-cart-count{
+.nav-cart-count {
   width: 15px;
   height: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  border-radius: 11px;
-  margin-left: -85px;
-  font-size: 10px;
+  border-radius: 60%;
+  font-size: 13px;
   background: red;
   color: white;
+  position: relative;
+  top: -30px;
+  left: -50px;
 }

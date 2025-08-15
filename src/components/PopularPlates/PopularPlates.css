@@ -1,14 +1,14 @@
-.popular {
+.popularplate {
   text-align: center;
   padding: 20px;
 }
 
-.popular h1 {
+.popularplate h1 {
   font-size: 2rem;
   margin-bottom: 10px;
 }
 
-.popular hr {
+.popularplate  hr {
   width: 100px;
   height: 3px;
   background: #ff6b6b;

@@ -1,14 +1,14 @@
-.popular {
+.newcollections {
   text-align: center;
   padding: 20px;
 }
 
-.popular h1 {
+.newcollections h1 {
   font-size: 2rem;
   margin-bottom: 10px;
 }
 
-.popular hr {
+.newcollections hr {
   width: 100px;
   height: 3px;
   background: #ff6b6b;
@@ -16,14 +16,14 @@
   border: none;
 }
 
-.popular-grid {
+.newcollections-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 0 20px;
 }
 
-.cup-card {
+.all-card {
   background: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -31,22 +31,22 @@
   transition: transform 0.3s ease;
 }
 
-.cup-card img {
+.all-card img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-.cup-card h3 {
+.all-card h3 {
   margin: 10px 0 5px;
 }
 
-.cup-card p {
+.all-card p {
   color: #888;
   font-weight: bold;
 }
 
-.cup-card button {
+.all-card button {
   margin-top: 10px;
   padding: 8px 15px;
   background: #ff6b6b;
@@ -56,6 +56,6 @@
   cursor: pointer;
 }
 
-.cup-card:hover {
+.all-card:hover {
   transform: translateY(-5px);
 }

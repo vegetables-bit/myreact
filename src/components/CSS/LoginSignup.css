@@ -1,0 +1,89 @@
+.loginsignup {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #fdfbfb, #ebedee);
+  font-family: Arial, sans-serif;
+}
+
+.loginsignup-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.loginsignup-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.loginsignup-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.loginsignup-fields input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.loginsignup-fields input:focus {
+  border-color: #ff4141;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #ff4141;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #e53e3e;
+}
+
+.loginsignup-login {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.loginsignup-login span {
+  color: #ff4141;
+  cursor: pointer;
+}
+
+.loginsignup-login span:hover {
+  text-decoration: underline;
+}
+
+.loginsignup-agree {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #666;
+}
+
+.loginsignup-agree label {
+  cursor: pointer;
+}
