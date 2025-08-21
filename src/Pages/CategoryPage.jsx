@@ -21,6 +21,26 @@ const CategoryPage = ({ category }) => {
             <p style={{ marginTop: '10px', fontWeight: 'bold' }}>{product.name}</p>
           </div>
         ))}
+        {filteredProducts.map((product, index) => (
+  <div 
+    key={index} 
+    style={{ 
+      textAlign: 'center', 
+      border: '1px solid #ddd', 
+      borderRadius: '8px', 
+      padding: '10px' 
+    }}
+  >
+    <img 
+      src={product.image} 
+      alt={product.name} 
+      style={{ width: '100%', height: 'auto', borderRadius: '8px' }} 
+    />
+    <p style={{ marginTop: '10px', fontWeight: 'bold' }}>{product.name}</p>
+    <p style={{ color: 'green', fontWeight: '600' }}>${product.price}</p>
+  </div>
+  ))}
+ 
       </div>
     </div>
   );
