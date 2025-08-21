@@ -83,3 +83,30 @@
   top: -30px;
   left: -50px;
 }
+
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-login-cart img {
+  width: 35px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.nav-cart-count {
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  width: 9px;
+  height: 10px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 6px 4px;
+  position: absolute;
+  top: -2px;
+  right: 120px;
+}
+

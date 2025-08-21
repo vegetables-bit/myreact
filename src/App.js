@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
 import Shop from './Pages/Shop';
+import { CartProvider } from './Context/CartContext';
 import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
@@ -14,6 +15,7 @@ import LoginSignup from './Pages/LoginSignup';
 function App() {
   return (
     <div>
+      <CartProvider>
       <BrowserRouter>
       <Navbar/>
         <Routes>
@@ -28,7 +30,7 @@ function App() {
         </Routes>
        <Footer/>
       </BrowserRouter>
-      
+      </CartProvider>
     </div>
   );
 }

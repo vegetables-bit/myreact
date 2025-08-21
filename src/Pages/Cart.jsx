@@ -1,32 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
+import { useCart } from "../Context/CartContext";
 import "../components/CSS/Cart.css";
 
 const Cart = () => {
-
-  const [cartItems, setCartItems] = useState([
-    { id: 1, name: "Farm Basins", price: 5500, quantity: 1 },
-    { id: 2, name: "Paper Plate", price: 3000, quantity: 2 },
-    { id: 3, name: "Travel Cup", price: 2500, quantity: 4 },
-  ]);
-
-  const removeItem = (id) => {
-    setCartItems(cartItems.filter((item) => item.id !== id));
-  };
-
-  
-  const updateQuantity = (id, quantity) => {
-    setCartItems(
-      cartItems.map((item) =>
-        item.id === id ? { ...item, quantity: Number(quantity) } : item
-      )
-    );
-  };
-
- 
-  const totalPrice = cartItems.reduce(
-    (total, item) => total + item.price * item.quantity,
-    0
-  );
+  const { cartItems, removeFromCart, updateQuantity, totalPrice } = useCart();
 
   return (
     <div className="cart-container">
@@ -45,7 +22,7 @@ const Cart = () => {
                 min="1"
                 onChange={(e) => updateQuantity(item.id, e.target.value)}
               />
-              <button onClick={() => removeItem(item.id)}>Remove</button>
+              <button onClick={() => removeFromCart(item.id)}>Remove</button>
             </div>
           ))}
 
