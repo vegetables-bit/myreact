@@ -8,7 +8,7 @@
   margin-bottom: 10px;
 }
 
-.popularplate  hr {
+.popularplate hr {
   width: 100px;
   height: 3px;
   background: #ff6b6b;
@@ -39,11 +39,13 @@
 
 .cup-card h3 {
   margin: 10px 0 5px;
+  font-size: 1.2rem;
 }
 
 .cup-card p {
   color: #888;
   font-weight: bold;
+  font-size: 0.95rem;
 }
 
 .cup-card button {
@@ -54,8 +56,58 @@
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 0.9rem;
 }
 
 .cup-card:hover {
   transform: translateY(-5px);
+}
+
+
+@media (max-width: 768px) {
+  .popularplate h1 {
+    font-size: 1.5rem;
+  }
+
+  .popular-grid {
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .cup-card {
+    padding: 12px;
+  }
+
+  .cup-card h3 {
+    font-size: 1rem;
+  }
+
+  .cup-card p {
+    font-size: 0.85rem;
+  }
+
+  .cup-card button {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .popularplate h1 {
+    font-size: 1.2rem;
+  }
+
+  .popular-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .cup-card {
+    padding: 10px;
+  }
+
+  .cup-card button {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
 }

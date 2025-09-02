@@ -1,10 +1,11 @@
-.hero{
+.hero { 
     height: 90vh;
     background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
     display: flex;
+    flex-wrap: wrap; 
 }
 
-.hero-left{
+.hero-left {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -14,41 +15,91 @@
     line-height: 1.1;
 }
 
-.hero-left h2{
+.hero-left h2 {
     color: #090909;
     font-size: 36px;
     font-weight: 300;
-    font-family: 'Elephant',  sans-serif;
+    font-family: 'Elephant', sans-serif;
 }
 
-.hero-left p{
+.hero-left p {
     color: #090909;
     font-size: 80px;
     font-weight: 300;
 }
 
-.hero-hand-icon{
+.hero-hand-icon {
     display: flex;
     align-items: center;
     gap: 2px;
     padding: 10px;
 }
 
-.hero-hand-icon img{
+.hero-hand-icon img {
     width: 50px;
 }
 
-.hero-latest-btn{
+.hero-latest-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    width: 100px;
-    height: 40px;
+    width: 140px;
+    height: 45px;
     border-radius: 40px;
     margin-top: 30px;
     background: #ff4141;
     color: white;
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        height: auto; 
+    }
+
+    .hero-left {
+        padding-left: 0;
+        gap: 15px;
+    }
+
+    .hero-left h2 {
+        font-size: 24px; 
+    }
+
+    .hero-left p {
+        font-size: 40px; 
+    }
+
+    .hero-hand-icon img {
+        width: 35px; 
+    }
+
+    .hero-latest-btn {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-left h2 {
+        font-size: 20px;
+    }
+
+    .hero-left p {
+        font-size: 28px;
+    }
+
+    .hero-latest-btn {
+        width: 100px;
+        height: 35px;
+        font-size: 11px;
+    }
 }

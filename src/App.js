@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar/Navbar';
-import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Shop from './Pages/Shop';
 import { CartProvider } from './Context/CartContext';
 import ShopCategory from './Pages/ShopCategory';
@@ -14,24 +14,22 @@ import LoginSignup from './Pages/LoginSignup';
 
 function App() {
   return (
-    <div>
-      <CartProvider>
-      <BrowserRouter>
-      <Navbar/>
+    <CartProvider>
+      <Router>
+        <Navbar />
         <Routes>
-          <Route path='/' element={<Shop/>}/>
+          <Route path="/" element={<Shop />} />
           <Route path="/shop" element={<Shop />} />
-          <Route path='/plates' element={<Plates/>}/>
-          <Route path='/basins' element={<Basins/>}/>
-          <Route path='/cups' element={<Cups/>}/>
-          <Route path='/product/:productId' element={<Product/>}/>
-          <Route path='/cart' element={<Cart/>}/>
+          <Route path="/plates" element={<Plates />} />
+          <Route path="/basins" element={<Basins />} />
+          <Route path="/cups" element={<Cups />} />
+          <Route path="/product/:productId" element={<Product />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
         </Routes>
-       <Footer/>
-      </BrowserRouter>
-      </CartProvider>
-    </div>
+        <Footer />
+      </Router>
+    </CartProvider>
   );
 }
 

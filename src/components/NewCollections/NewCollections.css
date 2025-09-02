@@ -59,3 +59,101 @@
 .all-card:hover {
   transform: translateY(-5px);
 }
+
+.newcollections { 
+  text-align: center;
+  padding: 20px;
+}
+
+.newcollections h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.newcollections hr {
+  width: 100px;
+  height: 3px;
+  background: #ff6b6b;
+  margin: 10px auto 20px;
+  border: none;
+}
+
+.newcollections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.all-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.all-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.all-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+}
+
+.all-card p {
+  color: #888;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.all-card button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #ff6b6b;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 100%; /* Full width for easier tapping */
+}
+
+.all-card:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 480px) {
+  .newcollections {
+    padding: 10px;
+  }
+
+  .newcollections h1 {
+    font-size: 1.5rem; 
+  }
+
+  .newcollections-grid {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
+
+  .all-card {
+    padding: 12px;
+  }
+
+  .all-card h3 {
+    font-size: 1rem;
+  }
+
+  .all-card p {
+    font-size: 0.9rem;
+  }
+
+  .all-card button {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+}

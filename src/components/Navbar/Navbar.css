@@ -110,3 +110,57 @@
   right: 120px;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .nav-logo {
+    gap: 10px;
+  }
+
+  .nav-logo img {
+    height: 40px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-login-cart {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .nav-login-cart button {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .nav-cart-count {
+    top: -5px;
+    right: 10px;
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-menu {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .nav-login-cart button {
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
